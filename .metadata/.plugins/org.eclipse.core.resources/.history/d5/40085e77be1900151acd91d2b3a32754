@@ -1,0 +1,17 @@
+/*
+ * Location.h
+ *
+ *  Created on: Jun 23, 2015
+ *      Author: colman
+ */
+
+#ifndef LOCATION_H_
+#define LOCATION_H_
+
+class Location {
+public:
+	Location();
+	virtual ~Location();
+};
+
+#endif /* LOCATION_H_ */

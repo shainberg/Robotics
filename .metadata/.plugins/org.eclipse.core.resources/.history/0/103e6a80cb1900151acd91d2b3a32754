@@ -1,0 +1,21 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: Jun 23, 2015
+ *      Author: colman
+ */
+
+#include <iostream>
+#include "Matrix.h"
+
+using namespace std;
+
+int main(){
+	Map map = Map();
+
+	map.loadPng();
+
+	map.printOriginalMap();
+	return 0;
+}
+

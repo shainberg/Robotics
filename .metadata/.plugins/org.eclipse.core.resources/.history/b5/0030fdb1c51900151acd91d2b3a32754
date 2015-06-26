@@ -1,0 +1,39 @@
+/*
+ * Matrix.h
+ *
+ *  Created on: Jun 23, 2015
+ *      Author: Ori Damari & Or Shainberg
+ */
+
+#ifndef MATRIX_H_
+#define MATRIX_H_
+
+#include "Utils.h";
+
+class Matrix {
+private:
+	/**
+	 * Declare the matrix
+	 */
+	Utils::CELL_STATUS** _matrix;
+	int _rows;
+	int _columns;
+
+public:
+	Matrix();
+	virtual ~Matrix();
+
+	/**
+	 * Constrator - Create new Matrix with the specified size
+	 */
+
+	Matrix(int xSize, int ySize);
+
+	Utils::CELL_STATUS get(int x, int y);
+
+	void set(int x, int y, Utils::CELL_STATUS status);
+
+	void print();
+};
+
+#endif /* MATRIX_H_ */

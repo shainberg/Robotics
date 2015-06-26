@@ -1,0 +1,1609 @@
+09:27:45 **** Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Location.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Location.d" -MT"Location.d" -o "Location.o" "../Location.cpp"
+Finished building: ../Location.cpp
+ 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Map.h:12,
+                 from ../Map.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../Map.cpp: In constructor ‘Map::Map()’:
+../Map.cpp:11:10: error: no matching function for call to ‘Matrix::Matrix()’
+../Map.cpp:11:10: note: candidates are:
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:28:2: note: Matrix::Matrix(int, int)
+../Matrix.h:28:2: note:   candidate expects 2 arguments, 0 provided
+../Matrix.h:13:7: note: Matrix::Matrix(const Matrix&)
+../Matrix.h:13:7: note:   candidate expects 1 argument, 0 provided
+../Map.cpp:11:10: error: no matching function for call to ‘Matrix::Matrix()’
+../Map.cpp:11:10: note: candidates are:
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:28:2: note: Matrix::Matrix(int, int)
+../Matrix.h:28:2: note:   candidate expects 2 arguments, 0 provided
+../Matrix.h:13:7: note: Matrix::Matrix(const Matrix&)
+../Matrix.h:13:7: note:   candidate expects 1 argument, 0 provided
+make: *** [Map.o] Error 1
+09:28:41 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Map.h:12,
+                 from ../Map.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Matrix.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../Matrix.cpp: In member function ‘Utils::CELL_STATUS Matrix::get(int, int)’:
+../Matrix.cpp:29:22: error: invalid conversion from ‘int’ to ‘Utils::CELL_STATUS’ [-fpermissive]
+make: *** [Matrix.o] Error 1
+09:29:07 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Matrix.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../Matrix.cpp: In member function ‘Utils::CELL_STATUS Matrix::get(int, int)’:
+../Matrix.cpp:33:22: error: invalid conversion from ‘int’ to ‘Utils::CELL_STATUS’ [-fpermissive]
+make: *** [Matrix.o] Error 1
+09:29:48 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Matrix.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../Matrix.cpp: In member function ‘Utils::CELL_STATUS Matrix::get(int, int)’:
+../Matrix.cpp:33:22: error: invalid conversion from ‘int’ to ‘Utils::CELL_STATUS’ [-fpermissive]
+make: *** [Matrix.o] Error 1
+09:29:55 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Matrix.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../Matrix.cpp: In constructor ‘Matrix::Matrix(int, int)’:
+../Matrix.cpp:18:44: error: cannot convert ‘Utils::CELL_STATUS*’ to ‘int*’ in assignment
+../Matrix.cpp: In member function ‘Utils::CELL_STATUS Matrix::get(int, int)’:
+../Matrix.cpp:33:22: error: invalid conversion from ‘int’ to ‘Utils::CELL_STATUS’ [-fpermissive]
+make: *** [Matrix.o] Error 1
+09:30:58 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Map.h:12,
+                 from ../Map.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Matrix.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building file: ../Utils.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utils.d" -MT"Utils.d" -o "Utils.o" "../Utils.cpp"
+In file included from ../Utils.cpp:8:0:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Utils.cpp
+ 
+Building file: ../lodepng.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lodepng.d" -MT"lodepng.d" -o "lodepng.o" "../lodepng.cpp"
+Finished building: ../lodepng.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+09:31:57 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+09:34:45 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+In file included from ../Main.cpp:9:0:
+../Matrix.h: In member function ‘void Matrix::print() const’:
+../Matrix.h:39:26: error: ‘((const Matrix*)this)->Matrix::_matrix’ cannot be used as a function
+make: *** [Main.o] Error 1
+09:34:49 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+In file included from ../Main.cpp:9:0:
+../Matrix.h: In member function ‘void Matrix::print() const’:
+../Matrix.h:39:26: error: ‘((const Matrix*)this)->Matrix::_matrix’ cannot be used as a function
+make: *** [Main.o] Error 1
+09:36:50 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+In file included from ../Main.cpp:9:0:
+../Matrix.h: In member function ‘void Matrix::print() const’:
+../Matrix.h:39:30: error: passing ‘const Matrix’ as ‘this’ argument of ‘Utils::CELL_STATUS Matrix::get(int, int)’ discards qualifiers [-fpermissive]
+make: *** [Main.o] Error 1
+09:38:00 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Map.h:12,
+                 from ../Map.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h: In member function ‘void Matrix::print() const’:
+../Matrix.h:45:6: error: ‘cout’ was not declared in this scope
+../Matrix.h:47:5: error: ‘cout’ was not declared in this scope
+make: *** [Map.o] Error 1
+09:38:10 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:11:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:11:0,
+                 from ../Map.h:12,
+                 from ../Map.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h: In member function ‘void Matrix::print() const’:
+../Matrix.h:45:6: error: ‘cout’ was not declared in this scope
+../Matrix.h:47:5: error: ‘cout’ was not declared in this scope
+make: *** [Map.o] Error 1
+09:38:41 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:12:0,
+                 from ../Main.cpp:9:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:12:0,
+                 from ../Map.h:12,
+                 from ../Map.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:12:0,
+                 from ../Matrix.cpp:8:
+../Utils.h:19:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+09:38:51 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:15:37 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:12:0,
+                 from ../Main.cpp:9:
+../Utils.h:15:31: error: invalid in-class initialization of static data member of non-integral type ‘const char*’
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:14:2: error: ‘Map’ was not declared in this scope
+../Main.cpp:14:6: error: expected ‘;’ before ‘map’
+../Main.cpp:16:2: error: ‘map’ was not declared in this scope
+make: *** [Main.o] Error 1
+10:15:53 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:12:0,
+                 from ../Map.h:12,
+                 from ../Main.cpp:9:
+../Utils.h:15:31: error: invalid in-class initialization of static data member of non-integral type ‘const char*’
+make: *** [Main.o] Error 1
+10:16:21 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Matrix.h:12:0,
+                 from ../Map.h:12,
+                 from ../Main.cpp:9:
+../Utils.h:15:25: error: invalid in-class initialization of static data member of non-integral type ‘char*’
+../Utils.h:15:25: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+make: *** [Main.o] Error 1
+10:16:45 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building file: ../Utils.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utils.d" -MT"Utils.d" -o "Utils.o" "../Utils.cpp"
+Finished building: ../Utils.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+./Map.o: In function `Map::loadPng()':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Map.cpp:27: undefined reference to `Utils::pngPath'
+collect2: error: ld returned 1 exit status
+make: *** [Robotics] Error 1
+10:17:00 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:14:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+./Main.o: In function `main':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Main.cpp:14: undefined reference to `Utils::pngPath'
+./Map.o: In function `Map::loadPng()':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Map.cpp:27: undefined reference to `Utils::pngPath'
+collect2: error: ld returned 1 exit status
+make: *** [Robotics] Error 1
+10:17:12 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+./Main.o: In function `main':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Main.cpp:15: undefined reference to `Utils::pngPath'
+./Map.o: In function `Map::loadPng()':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Map.cpp:27: undefined reference to `Utils::pngPath'
+collect2: error: ld returned 1 exit status
+make: *** [Robotics] Error 1
+10:18:11 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:19: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+./Main.o: In function `main':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Main.cpp:15: undefined reference to `Utils::pngPath'
+./Map.o: In function `Map::loadPng()':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Map.cpp:27: undefined reference to `Utils::pngPath'
+collect2: error: ld returned 1 exit status
+make: *** [Robotics] Error 1
+10:19:09 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:14: warning: unused variable ‘mapPath’ [-Wunused-variable]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+./Map.o: In function `Map::loadPng()':
+/home/colman/Desktop/shainberg/Robotics/Debug/../Map.cpp:27: undefined reference to `Utils::pngPath'
+collect2: error: ld returned 1 exit status
+make: *** [Robotics] Error 1
+10:20:20 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In constructor ‘Map::Map(const char*)’:
+../Map.cpp:14:13: error: invalid conversion from ‘const char*’ to ‘char*’ [-fpermissive]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:20:49 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp:12:1: error: prototype for ‘Map::Map(char*)’ does not match any in class ‘Map’
+In file included from ../Map.cpp:8:0:
+../Map.h:14:7: error: candidates are: Map::Map(const Map&)
+../Map.h:19:2: error:                 Map::Map(const char*)
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:21:00 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp:12:1: error: prototype for ‘Map::Map(char*)’ does not match any in class ‘Map’
+In file included from ../Map.cpp:8:0:
+../Map.h:14:7: error: candidates are: Map::Map(const Map&)
+../Map.h:19:2: error:                 Map::Map(const char*)
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:21:02 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp:12:1: error: prototype for ‘Map::Map(char*)’ does not match any in class ‘Map’
+In file included from ../Map.cpp:8:0:
+../Map.h:14:7: error: candidates are: Map::Map(const Map&)
+../Map.h:19:2: error:                 Map::Map(const char*)
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:21:14 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:21:24 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:21:28 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:22:12 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:23:19 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:23:54 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:24:00 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:24:03 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:26:14 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:31:38 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:31:44 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:31:54 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:32:01 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:32:52 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:34:25 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:35:51 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:35:53 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:35:56 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:39:22 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In destructor ‘virtual Map::~Map()’:
+../Map.cpp:18:9: error: type ‘class Matrix’ argument given to ‘delete’, expected pointer
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:39:41: error: no match for ‘operator=’ in ‘((Map*)this)->Map::_originalMap = (operator new(16u), (<statement>, ((Matrix*)<anonymous>)))’
+../Map.cpp:39:41: note: candidate is:
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:16:7: note: Matrix& Matrix::operator=(const Matrix&)
+../Matrix.h:16:7: note:   no known conversion for argument 1 from ‘Matrix*’ to ‘const Matrix&’
+../Map.cpp:41:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:42:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:37:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:39:45 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:41: error: no match for ‘operator=’ in ‘((Map*)this)->Map::_originalMap = (operator new(16u), (<statement>, ((Matrix*)<anonymous>)))’
+../Map.cpp:38:41: note: candidate is:
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:16:7: note: Matrix& Matrix::operator=(const Matrix&)
+../Matrix.h:16:7: note:   no known conversion for argument 1 from ‘Matrix*’ to ‘const Matrix&’
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:40:03 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:40:30 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:3: error: no match for ‘operator*’ in ‘*((Map*)this)->Map::_originalMap’
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:40:58 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:45:19: error: request for member ‘set’ in ‘((Map*)this)->Map::_originalMap’, which is of pointer type ‘Matrix*’ (maybe you meant to use ‘->’ ?)
+../Map.cpp:47:19: error: request for member ‘set’ in ‘((Map*)this)->Map::_originalMap’, which is of pointer type ‘Matrix*’ (maybe you meant to use ‘->’ ?)
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+make: *** [Map.o] Error 1
+10:41:12 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:41:16 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:42:09 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:47:12 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+10:48:13 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:55:23 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+10:57:04 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:00:41 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:00:48 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:40:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:41:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:36:21: warning: unused variable ‘status’ [-Wunused-variable]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:17:02 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:39:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: At global scope:
+../Map.cpp:50:19: error: no ‘void Map::blowMap()’ member function declared in class ‘Map’
+make: *** [Map.o] Error 1
+11:17:39 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:39:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:54:23: error: ‘pow’ was not declared in this scope
+../Map.cpp:54:41: error: ‘sqrt’ was not declared in this scope
+../Map.cpp:55:22: error: ‘ceil’ was not declared in this scope
+../Map.cpp:57:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:58:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:74:31: error: ‘map’ was not declared in this scope
+make: *** [Map.o] Error 1
+11:18:12 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:10:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:10:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:16:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../Main.cpp:21:6: error: expected unqualified-id before ‘(’ token
+make: *** [Main.o] Error 1
+11:19:42 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:10:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:10:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:16:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:39:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:54:23: error: ‘pow’ was not declared in this scope
+../Map.cpp:54:41: error: ‘sqrt’ was not declared in this scope
+../Map.cpp:55:22: error: ‘ceil’ was not declared in this scope
+../Map.cpp:57:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:58:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:74:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:75:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:77:37: error: lvalue required as left operand of assignment
+make: *** [Map.o] Error 1
+11:20:02 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:39:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:54:23: error: ‘pow’ was not declared in this scope
+../Map.cpp:54:41: error: ‘sqrt’ was not declared in this scope
+../Map.cpp:55:22: error: ‘ceil’ was not declared in this scope
+../Map.cpp:60:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:62:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:77:37: error: lvalue required as left operand of assignment
+make: *** [Map.o] Error 1
+11:20:13 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:39:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:54:23: error: ‘pow’ was not declared in this scope
+../Map.cpp:54:41: error: ‘sqrt’ was not declared in this scope
+../Map.cpp:55:22: error: ‘ceil’ was not declared in this scope
+../Map.cpp:60:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:62:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+make: *** [Map.o] Error 1
+11:20:17 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:8:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:8:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:38:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:39:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:54:23: error: ‘pow’ was not declared in this scope
+../Map.cpp:54:41: error: ‘sqrt’ was not declared in this scope
+../Map.cpp:55:22: error: ‘ceil’ was not declared in this scope
+../Map.cpp:60:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:62:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:64:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+make: *** [Map.o] Error 1
+11:20:34 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:39:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:40:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:61:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:63:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:65:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:65:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building file: ../Utils.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utils.d" -MT"Utils.d" -o "Utils.o" "../Utils.cpp"
+Finished building: ../Utils.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:20:44 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:20:49 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:21:31 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:21:34 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:22:27 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:39:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:40:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:61:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:63:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:65:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:65:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:22:31 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:23:18 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:39:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:40:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:24:07 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:25:18 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:41:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:42:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:25:22 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:31:28 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:41:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:42:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp: In member function ‘void Map::blowMap()’:
+../Map.cpp:69:35: error: found ‘:’ in nested-name-specifier, expected ‘::’
+make: *** [Map.o] Error 1
+11:31:35 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Map.cpp: In member function ‘void Map::loadPng()’:
+../Map.cpp:41:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Map.cpp:42:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building file: ../Utils.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Utils.d" -MT"Utils.d" -o "Utils.o" "../Utils.cpp"
+Finished building: ../Utils.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:32:01 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:32:46 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:34:21 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../Main.cpp:19:14: error: no matching function for call to ‘Map::loadPng()’
+../Main.cpp:19:14: note: candidate is:
+In file included from ../Main.cpp:9:0:
+../Map.h:22:7: note: void Map::loadPng(char*)
+../Map.h:22:7: note:   candidate expects 1 argument, 0 provided
+make: *** [Main.o] Error 1
+11:34:47 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+../Main.cpp:19:14: error: no matching function for call to ‘Map::loadPng()’
+../Main.cpp:19:14: note: candidate is:
+In file included from ../Main.cpp:9:0:
+../Map.h:22:7: note: void Map::loadPng(char*)
+../Map.h:22:7: note:   candidate expects 1 argument, 0 provided
+make: *** [Main.o] Error 1
+11:35:18 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:35:24 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:35:29 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:36:26 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:36:52 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:36:56 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:02 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:17 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:24 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:27 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:36 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:42 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:37:45 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:38:20 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:38:42 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:38:46 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.
+11:39:44 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+Building file: ../Main.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.d" -o "Main.o" "../Main.cpp"
+In file included from ../Main.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Main.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:15:18: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+Finished building: ../Main.cpp
+ 
+Building file: ../Map.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Map.d" -MT"Map.d" -o "Map.o" "../Map.cpp"
+In file included from ../Map.cpp:9:0:
+../Map.h:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../Map.h:12:0,
+                 from ../Map.cpp:9:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Map.cpp
+ 
+Building file: ../Matrix.cpp
+Invoking: Cross G++ Compiler
+g++ -I/usr/local/include/player-2.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Matrix.d" -MT"Matrix.d" -o "Matrix.o" "../Matrix.cpp"
+In file included from ../Matrix.cpp:8:0:
+../Matrix.h:12:19: warning: extra tokens at end of #include directive [enabled by default]
+Finished building: ../Matrix.cpp
+ 
+Building target: Robotics
+Invoking: Cross G++ Linker
+g++  -o "Robotics"  ./Location.o ./Main.o ./Map.o ./Matrix.o ./Utils.o ./lodepng.o   
+Finished building target: Robotics
+ 
+11:39:50 **** Incremental Build of configuration Debug for project Robotics ****
+make all 
+make: Nothing to be done for `all'.

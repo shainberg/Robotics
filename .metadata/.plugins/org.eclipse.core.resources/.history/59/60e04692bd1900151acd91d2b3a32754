@@ -1,0 +1,27 @@
+/*
+ * Matrix.h
+ *
+ *  Created on: Jun 23, 2015
+ *      Author: Ori Damari & Or Shainberg
+ */
+
+#ifndef MATRIX_H_
+#define MATRIX_H_
+
+class Matrix {
+public:
+	Matrix();
+	virtual ~Matrix();
+};
+
+/**
+ * Declare the matrix
+ */
+int** _Matrix;
+
+/**
+ * Constrator - Create new Matrix with the specified size
+ */
+void Matrix::Matrix(int xSize, int ySize);
+
+#endif /* MATRIX_H_ */

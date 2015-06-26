@@ -1,0 +1,34 @@
+/*
+ * Matrix.h
+ *
+ *  Created on: Jun 23, 2015
+ *      Author: Ori Damari & Or Shainberg
+ */
+
+#ifndef MATRIX_H_
+#define MATRIX_H_
+
+class Matrix {
+private:
+	/**
+	 * Declare the matrix
+	 */
+	int** _Matrix;
+
+public:
+	enum STATUS {FREE, OCCUPIED};
+	Matrix();
+	virtual ~Matrix();
+
+	/**
+	 * Constrator - Create new Matrix with the specified size
+	 */
+	Matrix(int xSize, int ySize);
+
+	int get(int x, int y);
+
+	void set(int x, int y, STATUS status);
+
+};
+
+#endif /* MATRIX_H_ */

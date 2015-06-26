@@ -1,0 +1,17 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: Jun 23, 2015
+ *      Author: colman
+ */
+
+
+Main::Main() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Main::~Main() {
+	// TODO Auto-generated destructor stub
+}
+
