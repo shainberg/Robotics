@@ -14,11 +14,8 @@ class Location {
 	int _yaw;
 
 public:
-	Location(int x, int y, int yaw){
-		_x = x;
-		_y = y;
-		_yaw = yaw;
-	}
+	Location(int x, int y, int yaw);
+	Location(float x, float y);
 	virtual ~Location();
 };
 

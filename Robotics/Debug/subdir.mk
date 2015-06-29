@@ -8,6 +8,8 @@ CPP_SRCS += \
 ../Main.cpp \
 ../Map.cpp \
 ../Matrix.cpp \
+../PathFinder.cpp \
+../Point.cpp \
 ../Utils.cpp \
 ../lodepng.cpp 
 
@@ -16,6 +18,8 @@ OBJS += \
 ./Main.o \
 ./Map.o \
 ./Matrix.o \
+./PathFinder.o \
+./Point.o \
 ./Utils.o \
 ./lodepng.o 
 
@@ -24,6 +28,8 @@ CPP_DEPS += \
 ./Main.d \
 ./Map.d \
 ./Matrix.d \
+./PathFinder.d \
+./Point.d \
 ./Utils.d \
 ./lodepng.d 
 

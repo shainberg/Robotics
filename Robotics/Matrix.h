@@ -9,7 +9,7 @@
 #define MATRIX_H_
 
 #include <iostream>
-#include "Utils.h";
+#include "Utils.h"
 
 using namespace std;
 
