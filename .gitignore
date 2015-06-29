@@ -2,4 +2,7 @@
 /Robotics/.settings
 /Robotics/.cproject
 /Robotics/.project
-/RemoteSystemsTempFiles/*
+/Robotics/Debug
+/RemoteSystemsTempFiles/
+
+
