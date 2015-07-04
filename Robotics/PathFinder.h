@@ -8,11 +8,11 @@
 #ifndef PATHFINDER_H_
 #define PATHFINDER_H_
 
-#include "Location.h"
 #include <list>
 #include <vector>
-#include "Point.h"
 #include <cstddef>
+#include "Point.h"
+#include "Location.h"
 #include "Matrix.h"
 
 using namespace std;
@@ -20,11 +20,11 @@ using namespace std;
 class PathFinder {
 public:
 	PathFinder();
-	PathFinder(Matrix* originalMap);
+	PathFinder(Matrix<Utils::CELL_STATUS>* originalMap);
 	virtual ~PathFinder();
 	vector<Point*> aStar(float x1, float y1, float x2, float y2);
-	Point** _robotsGrid;
-	Matrix* _originalMap;
+	Matrix<Point*>* _robotsGrid;
+	Matrix<Utils::CELL_STATUS>* _originalMap;
 	Point* getPoint(int x, int y);
 };
 

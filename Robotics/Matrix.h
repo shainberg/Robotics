@@ -10,15 +10,17 @@
 
 #include <iostream>
 #include "Utils.h"
+#include "Point.h"
 
 using namespace std;
 
+template<class T>
 class Matrix {
 private:
 	/**
 	 * Declare the matrix
 	 */
-	Utils::CELL_STATUS** _matrix;
+	T** _matrix;
 	int _rows;
 	int _columns;
 
@@ -31,15 +33,25 @@ public:
 
 	Matrix(int xSize, int ySize);
 
-	Utils::CELL_STATUS get(int x, int y) const{
+	T get(int x, int y) const{
 		if (x < _rows && y < _columns){
 			return _matrix[x][y];
 		}
 
-		return Utils::OCCUPIED;
+		T value = T();
+		return value;
 	};
 
-	void set(int x, int y, Utils::CELL_STATUS status);
+	int getRows() const{
+		return _rows;
+	};
+
+	int getColumns() const{
+		return _columns;
+	};
+
+	void set(int x, int y, T value);
+	void init(T value);
 
 	void print() const{
 		for (int i = 0; i < _rows; i++){

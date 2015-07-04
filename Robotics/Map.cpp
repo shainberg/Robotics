@@ -32,13 +32,14 @@ void Map::loadPng(char* mapPath){
 		std::cout << "decoder error " << error << ": "
 				<< lodepng_error_text(error) << std::endl;
 	else {
-	//the pixels are now in the vector "image", 4 bytes per pixel, ordered RGBARGBA..., use it as texture, draw it, ...
+		//the pixels are now in the vector "image", 4 bytes per pixel, ordered RGBARGBA..., use it as texture, draw it, ...
 
-	_originalMap = new Matrix(height, width);
-	_height = height;
-	_width = width;
+		_originalMap = new Matrix<Utils::CELL_STATUS>(height, width);
+		_originalMap->init(Utils::OCCUPIED);
+		_height = height;
+		_width = width;
 
-	for (unsigned int y = 0; y < height; y++)
+		for (unsigned int y = 0; y < height; y++) {
 			for (unsigned int x = 0; x < width; x++) {
 				if (image[y * width * 4 + x * 4 + 0]
 						|| image[y * width * 4 + x * 4 + 1]
@@ -47,6 +48,7 @@ void Map::loadPng(char* mapPath){
 				else
 					_originalMap->set(y,x, Utils::OCCUPIED);
 			}
+		}
 	}
 }
 

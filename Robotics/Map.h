@@ -10,11 +10,12 @@
 
 #include "lodepng.h";
 #include "Matrix.h"
+#include "Utils.h"
+#include "Point.h"
 
 class Map {
-	Matrix* _originalMap;
+	Matrix<Utils::CELL_STATUS>* _originalMap;
 	int _height, _width;
-	Matrix* _robotGrid;
 public:
 	Map(char* mapPath);
 	virtual ~Map();
@@ -23,6 +24,9 @@ public:
 	void blowMap();
 	void printOriginalMap() const{
 		_originalMap->print();
+	}
+	Matrix<Utils::CELL_STATUS>* getOriginalMap() const{
+		return _originalMap;
 	}
 };
 

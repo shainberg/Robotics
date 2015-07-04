@@ -7,28 +7,34 @@
 
 #include "Matrix.h"
 
-Matrix::Matrix(int xSize, int ySize) {
+template<class T>
+Matrix<T>::Matrix(int xSize, int ySize) {
 
-	_matrix = new Utils::CELL_STATUS*[xSize];
+	_matrix = new T*[xSize];
 	for (int i = 0; i < xSize; i++){
-		_matrix[i] = new Utils::CELL_STATUS[ySize];
-	}
-
-	for (int r = 0; r < xSize; r++){
-		for (int c = 0; c < ySize; c++){
-			_matrix[r][c] = Utils::OCCUPIED;
-		}
+		_matrix[i] = new T[ySize];
 	}
 
 	_rows = xSize;
 	_columns = ySize;
 }
 
-void Matrix::set(int x, int y, Utils::CELL_STATUS status) {
-	_matrix[x][y] = status;
+template<class T>
+void Matrix<T>::init(T value) {
+	for (int r = 0; r < _rows; r++){
+		for (int c = 0; c < _columns; c++){
+			_matrix[r][c] = value;
+		}
+	}
 }
 
-Matrix::~Matrix() {
+template<class T>
+void Matrix<T>::set(int x, int y, T value) {
+	_matrix[x][y] = value;
+}
+
+template<class T>
+Matrix<T>::~Matrix() {
 	for (int i = 0; i < _rows; i++){
 		delete [] _matrix[i];
 	}
@@ -36,3 +42,5 @@ Matrix::~Matrix() {
 }
 
 
+template class Matrix<Utils::CELL_STATUS>;
+template class Matrix<Point*>;

@@ -7,13 +7,13 @@
 
 #include "PathFinder.h"
 
-
-PathFinder::PathFinder(Matrix* originalMap) {
+PathFinder::PathFinder(Matrix<Utils::CELL_STATUS>* originalMap) {
 	_originalMap = originalMap;
+	_robotsGrid = new Matrix<Point*>(_originalMap->getRows(), _originalMap->getColumns());
 }
 
 PathFinder::~PathFinder() {
-	// TODO Auto-generated destructor stub
+	// TODO Auto-generated destructor stubb
 }
 
 Point* PathFinder::getPoint(int x, int y){
